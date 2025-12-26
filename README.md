@@ -101,119 +101,100 @@ text-overlay-tool/
  └─ LICENSE
 
 
-Requirements
+## Requirements
 
-Python 3.8+
-
-PyQt5
-
-OpenCV (cv2)
-
-Pillow
-
-NumPy
-
-google-cloud-vision (optional, required for OCR)
+- Python 3.8+
+- PyQt5
+- OpenCV (cv2)
+- Pillow
+- NumPy
+- google-cloud-vision (optional, required for OCR)
 
 실행을 위해 다음 환경이 필요합니다.
 
-Python 3.8 이상
+- Python 3.8 이상
+- PyQt5
+- OpenCV (cv2)
+- Pillow
+- NumPy
+- google-cloud-vision (OCR 사용 시 필요)
 
-PyQt5
+---
 
-OpenCV (cv2)
+## Google Cloud Vision Setup
 
-Pillow
-
-NumPy
-
-google-cloud-vision (OCR 사용 시 필요)
-
-Google Cloud Vision Setup
-
-Create a Google Cloud project
-
-Enable Cloud Vision API
-
-Create a service account and download the JSON key file
-
-Set the credential file path inside the application UI
+1. Create a Google Cloud project
+2. Enable **Cloud Vision API**
+3. Create a service account and download the JSON key file
+4. Set the credential file path inside the application UI
 
 Google Cloud Vision OCR을 사용하려면 다음 과정을 거쳐야 합니다.
 
-Google Cloud 프로젝트 생성
+1. Google Cloud 프로젝트 생성
+2. **Cloud Vision API** 활성화
+3. 서비스 계정 생성 후 JSON 키 파일 다운로드
+4. 애플리케이션 UI에서 키 파일 경로 설정
 
-Cloud Vision API 활성화
+> ⚠ The service account key file must **not** be committed to this repository.  
+> ⚠ 서비스 계정 키 파일은 절대 GitHub에 커밋하지 마세요.
 
-서비스 계정 생성 후 JSON 키 파일 다운로드
+---
 
-애플리케이션 UI에서 키 파일 경로 설정
+## How to Run
 
-⚠ The service account key file must not be committed to this repository.
-⚠ 서비스 계정 키 파일은 절대 GitHub에 커밋하지 마세요.
+Run the application **from the project root directory**:
 
-How to Run
-
-Run the application from the project root directory:
-
+```bash
 python main.py
 
 
-프로젝트 루트 디렉토리에서 다음 명령으로 실행합니다.
+## Why Google Cloud Vision?
 
-python main.py
-
-
-Note: Running from other directories may result in import errors.
-주의: 다른 위치에서 실행할 경우 import 오류가 발생할 수 있습니다.
-
-Why Google Cloud Vision?
-
-This project prioritizes practical usability and executable distribution.
+This project prioritizes **practical usability and executable distribution**.
 
 While local OCR engines (e.g. PaddleOCR) were evaluated, they introduced
 significant instability when packaged as executables.
 
 Google Cloud Vision was chosen as the default OCR backend due to:
 
-Stable runtime behavior
+- Stable runtime behavior
+- Smaller executable size
+- Fewer platform-specific issues
+- Better end-user accessibility
 
-Smaller executable size
-
-Fewer platform-specific issues
-
-Better end-user accessibility
-
-이 프로젝트는 실제 사용성과 exe 배포 안정성을 최우선으로 고려합니다.
+이 프로젝트는 **실제 사용성과 exe 배포 안정성**을 최우선으로 고려합니다.
 
 PaddleOCR 등 로컬 OCR 엔진도 검토했지만,
 exe 패키징 과정에서 잦은 오류와 불안정성이 발생했습니다.
 
 Google Cloud Vision을 기본 OCR 엔진으로 선택한 이유는 다음과 같습니다.
 
-안정적인 실행 환경
+- 안정적인 실행 환경
+- 비교적 작은 실행 파일 크기
+- 플랫폼 의존성 문제 감소
+- 사용자 접근성 향상
 
-비교적 작은 실행 파일 크기
+---
 
-플랫폼 의존성 문제 감소
+## License
 
-사용자 접근성 향상
+This project is licensed under the **MIT License**.  
+See the [LICENSE](LICENSE) file for details.
 
-License
+본 프로젝트는 **MIT 라이선스**로 배포됩니다.  
+자세한 내용은 [LICENSE](LICENSE) 파일을 참고하세요.
 
-This project is licensed under the MIT License.
-See the LICENSE
- file for details.
+---
 
-본 프로젝트는 MIT 라이선스로 배포됩니다.
-자세한 내용은 LICENSE
- 파일을 참고하세요.
+## Disclaimer
 
-Disclaimer
-
-This tool is intended for personal and educational use.
+This tool is intended for personal and educational use.  
 Users are responsible for ensuring that their usage complies with
 copyright laws and content policies in their region.
+
+본 도구는 개인 및 학습 목적을 위해 제공됩니다.  
+사용자는 각 지역의 저작권 및 관련 법규를 준수할 책임이 있습니다.
+
 
 본 도구는 개인 및 학습 목적을 위해 제공됩니다.
 사용자는 각 지역의 저작권 및 관련 법규를 준수할 책임이 있습니다.
