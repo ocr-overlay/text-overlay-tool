@@ -146,7 +146,7 @@ Run the application **from the project root directory**:
 
 ```bash
 python main.py
-
+```
 
 ## Why Google Cloud Vision?
 
