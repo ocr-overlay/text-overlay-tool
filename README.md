@@ -148,6 +148,8 @@ Run the application **from the project root directory**:
 python main.py
 ```
 
+---
+
 ## Why Google Cloud Vision?
 
 This project prioritizes **practical usability and executable distribution**.
