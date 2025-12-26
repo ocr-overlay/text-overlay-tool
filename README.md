@@ -9,7 +9,7 @@ Google Cloud Vision OCR을 사용해 이미지 위에 텍스트를 오버레이�
 만화 식질을 위한 텍스트 오버레이 데스크톱 툴
 
 ---
-<img src="https://github.com/ocr-overlay/text-overlay-tool/blob/main/text_overlay_tool.gif">
+
 ## Overview
 
 **Text Overlay Tool** is a desktop application designed to assist comic translation
